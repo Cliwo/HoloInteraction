@@ -1,5 +1,5 @@
 ﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
+// https://github.com/Shrimpey/Outlined-Diffuse-Shader-Fixed
 Shader "Outlined/Custom" {
 	Properties {
 		_Color ("Main Color", Color) = (.5,.5,.5,1)
