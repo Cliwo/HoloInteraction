@@ -113,6 +113,49 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &123678146
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 123678148}
+  - component: {fileID: 123678147}
+  m_Layer: 0
+  m_Name: Planes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &123678147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 123678146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba5d24f7343bf3f46bd9d9ef0fb5c563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SnapToGravityThreshold: 0
+  MinArea: 1
+  VisualizeSubPlanes: 0
+--- !u!4 &123678148
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 123678146}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &432392896
 Prefab:
   m_ObjectHideFlags: 0
@@ -157,7 +200,8 @@ Prefab:
       propertyPath: KeywordsAndResponses.Array.data[0].Response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1425495929}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114000012919351050, guid: 0b20469ea0c7b2945bc2a68947531ead, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 0b20469ea0c7b2945bc2a68947531ead, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &432392897 stripped
@@ -290,6 +334,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000011656901714, guid: 3eddd1c29199313478dd3f912bfab2ab,
     type: 2}
   m_PrefabInternal: {fileID: 797505366}
+--- !u!1 &1352521514 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000013332442620, guid: 0b20469ea0c7b2945bc2a68947531ead,
+    type: 2}
+  m_PrefabInternal: {fileID: 432392896}
+--- !u!102 &1352521521 stripped
+TextMesh:
+  m_CorrespondingSourceObject: {fileID: 102000014138650206, guid: 0b20469ea0c7b2945bc2a68947531ead,
+    type: 2}
+  m_PrefabInternal: {fileID: 432392896}
+--- !u!114 &1352521523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1352521514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35a8d7d6165d4e548b1dc3ae5cec4c75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1352521521}
 --- !u!1001 &1425495928
 Prefab:
   m_ObjectHideFlags: 0
